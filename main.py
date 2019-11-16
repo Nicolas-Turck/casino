@@ -26,3 +26,9 @@ while 1 :
                 print("enter only number!!!")
          # i declare a variable is a egual the return of fonction
         wheel = wheel_result()
+        # i declare a variable is a egual the return of fonction
+        playerNumber = number_choice()
+        # i display the the random number with the method format in the print
+        print("the ball fall on .... {}".format(wheel))
+         # i declare a variable is equal the return of function with parametre
+        playerColor = color_choice(playerNumber) 
