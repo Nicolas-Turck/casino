@@ -6,6 +6,17 @@ def wheel_result():
     wheel = randrange(0, 50)
     return wheel # i return the result of my function
 
+def wheel_color(wheel): #
+    """i create a function for verify is the number is pair or impair"""
+    if wheel%2 ==0:
+        # i declare the boolean True
+        wheelColor = True
+        return wheelColor # i return if the number  is pair
+    elif wheel %2 != 0:
+        # i declare the boolean False
+        wheelColor = False
+        return wheelColor # i return if the number is impair
+
 def number_choice():
     """ i create a function for save the player number choice"""
     enter = 0
@@ -34,3 +45,27 @@ def color_choice(playerNumber): # i create a function with parametre to definite
         # i declare the boolean False
         playerColor = False
         return playerColor # i return if the number is impair
+
+def compare(gain, bet, playerNumber, playerColor, wheel, wheelColor): # i create a function for compare the number and calculate the gain of player
+    """i create a function for compare the number and calculate the gain of player"""
+    if wheel == playerNumber:
+        print("you win")
+        # i multply the bet for 3 and adding result to gain
+        gain = gain + (bet*3)
+        # i round gain
+        gain = ceil(gain)
+        return gain
+
+    elif wheelColor == playerColor:
+        #i divide the bet for two and add result to gain
+        gain = gain + (bet/2)
+        # i round gain
+        gain = ceil(gain)
+        print("you win with same color")
+        return gain
+    else:# else i took of bet of gain
+        gain = gain - bet
+        # i round gain
+        gain = ceil(gain)
+        print("you loose")
+        return gain

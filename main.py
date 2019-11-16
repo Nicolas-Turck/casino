@@ -31,4 +31,14 @@ while 1 :
         # i display the the random number with the method format in the print
         print("the ball fall on .... {}".format(wheel))
          # i declare a variable is equal the return of function with parametre
-        playerColor = color_choice(playerNumber) 
+        playerColor = color_choice(playerNumber)
+        wheelColor = wheel_color(wheel)
+        # i declare bet players is a float or integer
+        bet = float(bet)
+        # i declare the last variable with function to return the gain calculated of user
+        gain = compare(gain, bet, playerNumber, playerColor, wheel, wheelColor)
+        print("your gain {}$".format(gain))
+
+
+
+    exit()        
