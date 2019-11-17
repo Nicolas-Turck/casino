@@ -1,4 +1,4 @@
-from functions import * # i import all function of files functions.py
+from fonctions import * # i import all function of files functions.py
 from random import * # i import the method random for random choice wheel
 from math import ceil # i import the method ceil of math module to round the bet and the gain
 
@@ -41,4 +41,4 @@ while 1 :
 
 
 
-    exit()        
+    exit()
